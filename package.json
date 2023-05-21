@@ -1,0 +1,57 @@
+{
+  "name": "@userdocks/javascript-rest-api",
+  "version": "0.0.0",
+  "description": "Call the userdocks REST API via the JavaScript rest function (node + browser)",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/userdocks.js",
+  "module": "./dist/userdocks.modern.js",
+  "unpkg": "./dist/userdocks.umd.js",
+  "private": false,
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "test": "jest --coverage",
+    "build": "microbundle",
+    "watch": "microbundle -w",
+    "cleanup": "rm -rf ./node_modules && rm -rf ./dist && npm i",
+    "prepublishOnly": "npm run cleanup && npm test && npm run build"
+  },
+  "author": "userdocks",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/userdocks/javascript-rest-api"
+  },
+  "bugs": {
+    "url": "https://github.com/userdocks/javascript-rest-api/issues"
+  },
+  "homepage": "https://github.com/userdocks/javascript-rest-api",
+  "keywords": [
+    "userdocks",
+    "server",
+    "sdk"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^27.4.7",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
+  }
+}

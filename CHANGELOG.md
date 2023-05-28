@@ -1,3 +1,7 @@
+0.1.0 - May, 28 2023
+
+* 623eb9e Initial commit (aichbauer)
+
 0.2.1 - February, 11 2023
 
 * a4244b5 Fix: missing authorization header (aichbauer)

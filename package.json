@@ -1,6 +1,6 @@
 {
   "name": "@userdocks/javascript-rest-api",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Call the userdocks REST API via the JavaScript rest function (node + browser)",
   "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
